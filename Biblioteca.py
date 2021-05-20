@@ -290,7 +290,7 @@ def pergunta_his(m, p, j, d):
                 return False
             return True
         else:
-            cabecalho('Você errou')
+            cabecalho('VOCÊ ERROU!')
             perg_disp_his(disponivel)
             return True
     else:
@@ -300,7 +300,7 @@ def pergunta_his(m, p, j, d):
                 perguntah = perg_his.get(pr)
                 cabecalho(perguntah)
                 if questoes(m, pr):
-                    cabecalho('VOCÊ ACERTOU')
+                    cabecalho('VOCÊ ACERTOU!')
                     j += 1
                     p[j] = p[j] + 1
                     disponivel.remove(pr)
@@ -309,7 +309,7 @@ def pergunta_his(m, p, j, d):
                         return False
                     return True
                 else:
-                    cabecalho('Você errou')
+                    cabecalho('VOCÊ ERROU!')
                     perg_disp_his(disponivel)
                     return True
 
@@ -341,7 +341,7 @@ def pergunta_geo(m, p, j, d):
                 return False
             return True
         else:
-            cabecalho('Você errou')
+            cabecalho('VOCÊ ERROU!')
             perg_disp_geo(disponivel)
             return True
     else:
@@ -360,6 +360,6 @@ def pergunta_geo(m, p, j, d):
                         return False
                     return True
                 else:
-                    cabecalho('Você errou')
+                    cabecalho('VOCÊ ERROU!')
                     perg_disp_geo(disponivel)
                     return True
