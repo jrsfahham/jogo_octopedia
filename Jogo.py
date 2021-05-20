@@ -1,11 +1,11 @@
 from Biblioteca import *
 
 print(linha())
-quant = int(input('Quantos jogadores iram participar?\n>> '))
+quant = int(input('Quantos jogadores irão participar?\n>> '))
 print(linha())
 placar = registro(quant)
 print(linha())
-materias = ['Hístoria', 'Geografia']
+materias = ['História', 'Geografia']
 mat_disp = materia_disponivel(materias)
 
 perg_dis_his = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -36,10 +36,10 @@ while True:
     jogador = escolher_jogador(quant)
     materia = escolher_materia(jogador, placar, mat_disp)
 
-    if materia == 'Hístoria':
+    if materia == 'História':
         fim = pergunta_his(materia, placar, jogador, dis_his)
         if not fim:
-            mat_disp.remove('Hístoria')
+            mat_disp.remove('História')
             materia_disponivel(mat_disp)
             print(linha())
 
